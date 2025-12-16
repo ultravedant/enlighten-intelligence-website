@@ -37,7 +37,7 @@ export function Header() {
           </nav>
 
           {/* CTA Button */}
-          <Button className="rounded-full px-6" onClick={() => window.open("https://calendly.com/vedantjha/30min", "_blank")} >Book a 15-min Call</Button>
+          <Button className="rounded-full px-6" onClick={() => window.open("https://calendly.com/vedantjha/30min" target="_blank")} >Book a 15-min Call</Button>
         </div>
       </div>
     </header>

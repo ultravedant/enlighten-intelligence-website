@@ -52,6 +52,12 @@ export interface ButtonProps extends MotionButtonPropsType {
   leadingIcon?: TablerIcon
   isLoading?: boolean
   stretch?: boolean
+  /** Optional href - when provided, the button renders as an anchor */
+  href?: string
+  /** Anchor target (e.g. "_blank") */
+  target?: string
+  /** Anchor rel attribute */
+  rel?: string
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -66,17 +72,42 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       leadingIcon = undefined,
       isLoading = false,
       asChild = false,
+      href,
+      target,
+      rel,
       ...props
     },
     ref,
   ) => {
     const SupportIconRender = supportIcon ?? React.Fragment
     const LeadingIconRender = leadingIcon ?? React.Fragment
+    // If an href is provided, render an anchor instead of a button so we can
+    // safely use this component from Server Components without passing event
+    // handler functions across the server/client boundary.
+    if (href) {
+      const finalRel = target === "_blank" ? (rel ? rel : "noopener noreferrer") : rel
+      return (
+        <motion.a
+          className={cn(buttonVariants({ variant, size, className }), stretch && "w-full")}
+          ref={ref as any}
+          href={href}
+          target={target}
+          rel={finalRel}
+          {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
+        >
+          {isLoading ? <IconLoader2 {...TABLER_ICON_STYLE} className="animate-spin" /> : <></>}
+          {!isLoading && supportIcon && <SupportIconRender {...TABLER_ICON_STYLE} />}
+          {children}
+          {leadingIcon && <LeadingIconRender {...TABLER_ICON_STYLE} />}
+        </motion.a>
+      )
+    }
+
     return (
       <motion.button
         className={cn(buttonVariants({ variant, size, className }), stretch && "w-full")}
         ref={ref}
-        {...props}
+        {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}
       >
         {isLoading ? <IconLoader2 {...TABLER_ICON_STYLE} className="animate-spin" /> : <></>}
         {!isLoading && supportIcon && <SupportIconRender {...TABLER_ICON_STYLE} />}
