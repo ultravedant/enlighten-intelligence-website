@@ -4,8 +4,7 @@ import { ClientLogos } from "@/components/client-logos"
 import { PortfolioShowcase } from "@/components/portfolio-showcase"
 import { StatsSection } from "@/components/stats-section"
 import { ServicesSection } from "@/components/services-section"
-import { CaseStudiesSection } from "@/components/case-studies-section"
-import { TestimonialsSection } from "@/components/testimonials-section"
+import { ToolsSection } from "@/components/tools-section"
 import { ApproachSection } from "@/components/approach-section"
 import { PricingSection } from "@/components/pricing-section"
 import { FAQSection } from "@/components/faq-section"
@@ -21,8 +20,7 @@ export default function Home() {
       <ClientLogos />
       <StatsSection />
       <ServicesSection />
-      <CaseStudiesSection />
-      <TestimonialsSection />
+      <ToolsSection />
       <ApproachSection />
       <PricingSection />
       <FAQSection />

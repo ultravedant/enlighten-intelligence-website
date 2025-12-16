@@ -6,38 +6,38 @@ export function ApproachSection() {
   const steps = [
     {
       number: "01",
-      title: "Discovery & Strategy",
+      title: "Research & Analysis",
       description:
-        "We dive deep into your agency's goals, target audience, and competitive landscape to craft a conversion-focused strategy that aligns with your growth objectives.",
+        "We conduct in-depth market research, competitive analysis, and technical feasibility studies to understand your business landscape and identify opportunities for innovation and growth.",
     },
     {
       number: "02",
-      title: "Design & Prototyping",
+      title: "Strategic Planning",
       description:
-        "Our team creates stunning, user-centric designs that prioritize conversions. We prototype key interactions and gather feedback before moving to development.",
+        "Our team develops comprehensive roadmaps combining business strategy, technology architecture, and user experience design to ensure your solution is built on a solid foundation.",
     },
     {
       number: "03",
-      title: "Development & Integration",
+      title: "Agile Development",
       description:
-        "We build scalable, performant websites using modern technologies. Every integration is seamless, from CRM systems to analytics platforms.",
+        "Using modern development methodologies, we build intelligent systems with cutting-edge technologies, ensuring scalability, security, and performance from day one.",
     },
     {
       number: "04",
-      title: "Testing & Optimization",
+      title: "AI Integration & Automation",
       description:
-        "Rigorous testing across devices and browsers ensures flawless performance. We optimize every element for speed, accessibility, and conversion rates.",
+        "We integrate intelligent systems and automation tools tailored to your business needs, leveraging AI and machine learning to optimize operations and enhance user experiences.",
     },
     {
       number: "05",
-      title: "Launch & Growth Support",
+      title: "Continuous Innovation",
       description:
-        "We don't just launch and leave. Our ongoing support ensures your website continues to evolve, scale, and drive results as your agency grows.",
+        "Beyond launch, we provide ongoing support, monitoring, and iterative improvements. Our team helps you adapt to market changes and scale your technology as your business grows.",
     },
   ]
 
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="approach" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20">
@@ -57,7 +57,7 @@ export function ApproachSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            A proven process that transforms your vision into high-converting digital experiences
+            A systematic methodology that transforms ideas into intelligent, scalable digital solutions
           </motion.p>
         </div>
 

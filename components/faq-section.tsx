@@ -9,39 +9,39 @@ export function FAQSection() {
 
   const faqs = [
     {
-      question: "What's your typical project timeline?",
+      question: "What types of businesses do you work with?",
       answer:
-        "Most projects take 2-4 weeks from kickoff to launch, depending on scope. We provide detailed timelines during our discovery phase and keep you updated throughout the process.",
+        "We work with startups at all stages - from idea validation to scaling operations. Whether you're launching your first product or expanding into new markets, we have the expertise to support your growth journey.",
     },
     {
-      question: "Do you offer white-label services?",
+      question: "How long does a typical project take?",
       answer:
-        "Yes! Our Enterprise plan includes white-label solutions where we work behind the scenes as an extension of your agency. Your clients will only see your branding.",
+        "Project timelines vary based on complexity. Product engineering projects typically take 8-16 weeks, while AI system integrations can be delivered in 4-8 weeks. We provide detailed timelines during our initial consultation.",
     },
     {
-      question: "What if I need revisions after launch?",
+      question: "Do you provide ongoing support after launch?",
       answer:
-        "All our plans include post-launch support. Professional plans get 30 days of support, while Enterprise clients receive ongoing maintenance and updates as part of their package.",
+        "Absolutely. We offer comprehensive post-launch support including monitoring, optimization, updates, and scaling assistance. Our goal is to be your long-term technology partner as your business grows.",
     },
     {
-      question: "Can you work with our existing tech stack?",
+      question: "What AI tools and technologies do you specialize in?",
       answer:
-        "Absolutely. We're experienced with all major platforms and frameworks. During discovery, we'll assess your current setup and recommend the best approach for integration.",
+        "We work with cutting-edge AI tools including ChatGPT, Claude, custom machine learning models, and automation frameworks. Our team stays current with the latest AI advancements to deliver innovative solutions.",
     },
     {
-      question: "How do you ensure high conversion rates?",
+      question: "Can you help with an existing product or system?",
       answer:
-        "We use data-driven design principles, A/B testing, and proven conversion optimization techniques. Every design decision is backed by research and best practices from thousands of successful projects.",
+        "Yes! We excel at enhancing existing products, refactoring legacy systems, integrating new technologies, and scaling infrastructure. We'll assess your current setup and provide strategic recommendations for improvement.",
     },
     {
-      question: "What's included in ongoing support?",
+      question: "How do you ensure the security of our data and IP?",
       answer:
-        "Ongoing support includes bug fixes, security updates, performance monitoring, content updates, and monthly strategy calls to ensure your site continues to perform at its best.",
+        "Security is paramount. We implement industry-standard security practices, sign NDAs, use secure development environments, and follow strict data protection protocols. Your intellectual property is always protected.",
     },
   ]
 
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="faq" className="py-24 px-6 bg-background">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <motion.h2
@@ -60,7 +60,7 @@ export function FAQSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-muted-foreground"
           >
-            Everything you need to know about working with Spark.
+            Everything you need to know about partnering with Enlighten Intelligence.
           </motion.p>
         </div>
 

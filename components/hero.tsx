@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/3d-button"
-import { Handshake } from "lucide-react"
+import { Lightbulb } from "lucide-react"
 import { motion } from "framer-motion"
 
 export function Hero() {
@@ -17,11 +17,11 @@ export function Hero() {
         >
           <span className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground" />
-            {"1,000+ Projects"}
+            {"500+ Startups Launched"}
           </span>
           <span className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground" />
-            {"20+ Years Experience"}
+            {"15+ Years in Tech"}
           </span>
         </motion.div>
 
@@ -32,15 +32,15 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-serif text-4xl md:text-6xl lg:text-7xl font-normal text-center leading-[1.1] mb-6 text-balance"
         >
-          Trusted Conversion Websites,{" "}
+          Transform Your{" "}
           <span className="inline-flex items-center gap-3">
-            Built for
+            Startup
             <span className="inline-flex items-center justify-center w-10 h-10 md:w-14 md:h-14 rounded-full text-[rgba(192,12,12,0.22)] bg-[rgba(10,10,10,0.14673913043478262)]">
-              <Handshake className="w-5 h-5 md:w-7 md:h-7 text-[rgba(255,117,38,1)]" />
+              <Lightbulb className="w-5 h-5 md:w-7 md:h-7 text-[rgba(255,117,38,1)]" />
             </span>
-            Agencies
+            Vision
           </span>{" "}
-          That Scale.
+          Into Reality & Scale to the Next Level.
         </motion.h1>
 
         {/* Sub-headline */}
@@ -50,7 +50,8 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="text-center text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed"
         >
-          Turn every visit into growth—partner with a team that's invested in your continued success.
+          Your trusted partner to support startup ideas and help scale your running business through intelligent
+          systems, innovative design, and strategic growth.
         </motion.p>
 
         {/* CTA Button */}

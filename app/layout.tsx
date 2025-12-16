@@ -16,8 +16,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Spark - Design Agency",
-  description: "Websites That Convert. A Design Partner That Sticks Around.",
+  title: "Enlighten Intelligence - Transform Your Business with AI & Technology",
+  description:
+    "Your trusted partner to support startup ideas and scale running businesses to the next level through intelligent systems and innovative solutions.",
   generator: "v0.app",
 }
 

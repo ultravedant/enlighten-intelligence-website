@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { IconBrandLinkedin, IconBrandTwitter, IconBrandInstagram, IconMail, IconPhone } from "@tabler/icons-react"
+import { Sparkles } from "lucide-react"
 
 export function Footer() {
   return (
@@ -10,13 +11,13 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-white font-bold text-lg">S</span>
+                <Sparkles className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="font-serif text-xl font-bold">Spark</span>
+              <span className="font-serif text-xl font-bold">Enlighten Intelligence</span>
             </div>
             <p className="text-muted-foreground leading-relaxed max-w-md">
-              Trusted conversion websites, built for agencies that scale. Turn every visit into growth with a partner
-              invested in your success.
+              Transform your startup vision into reality and scale your business to the next level with intelligent
+              systems and innovative technology solutions.
             </p>
           </div>
 
@@ -30,7 +31,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#process" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="#approach" className="text-muted-foreground hover:text-primary transition-colors">
                   Process
                 </Link>
               </li>
@@ -40,8 +41,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#testimonials" className="text-muted-foreground hover:text-primary transition-colors">
-                  Testimonials
+                <Link href="#faq" className="text-muted-foreground hover:text-primary transition-colors">
+                  FAQ
                 </Link>
               </li>
             </ul>
@@ -53,11 +54,11 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:hello@sparkagency.com"
+                  href="mailto:hello@enlightenintel.com"
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <IconMail className="w-4 h-4" />
-                  hello@sparkagency.com
+                  hello@enlightenintel.com
                 </a>
               </li>
               <li>
@@ -76,7 +77,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Spark Agency. All rights reserved.
+            © {new Date().getFullYear()} Enlighten Intelligence. All rights reserved.
           </p>
 
           {/* Social Links */}

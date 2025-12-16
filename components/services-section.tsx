@@ -5,29 +5,29 @@ import { motion } from "framer-motion"
 export function ServicesSection() {
   const services = [
     {
-      title: "Conversion-Focused Design",
-      image: "/placeholder.svg?height=400&width=300",
-      overlayImage: "/placeholder.svg?height=400&width=300",
+      title: "Product Engineering",
+      image: "/software-coding-screen.png",
+      overlayImage: "/modern-tech-product-interface-dashboard.jpg",
     },
     {
-      title: "Agency White-Label Solutions",
-      image: "/placeholder.svg?height=400&width=300",
-      overlayImage: "/placeholder.svg?height=400&width=300",
+      title: "Intelligent Systems",
+      image: "/artificial-intelligence-ai-neural-network.jpg",
+      overlayImage: "/machine-learning-data-analytics-visualization.jpg",
     },
     {
-      title: "Scalable Web Development",
-      image: "/placeholder.svg?height=400&width=300",
-      overlayImage: "/placeholder.svg?height=400&width=300",
+      title: "Experience Design",
+      image: "/ux-ui-design-wireframes-prototypes.jpg",
+      overlayImage: "/user-interface-mobile-app-design.jpg",
     },
     {
-      title: "Ongoing Support & Growth",
-      image: "/placeholder.svg?height=400&width=300",
-      overlayImage: "/placeholder.svg?height=400&width=300",
+      title: "Growth Strategy",
+      image: "/business-growth-chart-analytics.jpg",
+      overlayImage: "/startup-scaling-strategy-planning.jpg",
     },
   ]
 
   return (
-    <section className="py-20 px-4 sm:px-6 w-full bg-background">
+    <section id="services" className="py-20 px-4 sm:px-6 w-full bg-background">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -47,7 +47,7 @@ export function ServicesSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="font-sans text-lg sm:text-xl text-muted-foreground"
           >
-            Everything your agency needs to deliver exceptional results.
+            Comprehensive solutions to launch and scale your business vision.
           </motion.p>
         </div>
 

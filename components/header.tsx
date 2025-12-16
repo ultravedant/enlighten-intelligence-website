@@ -12,21 +12,21 @@ export function Header() {
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <Sparkles className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="font-serif">Spark</span>
+            <span className="font-serif">Enlighten Intelligence</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
             <Link href="#services" className="text-sm text-foreground hover:text-primary transition-colors">
               Services
             </Link>
-            <Link href="#process" className="text-sm text-foreground hover:text-primary transition-colors">
+            <Link href="#approach" className="text-sm text-foreground hover:text-primary transition-colors">
               Process
             </Link>
             <Link href="#pricing" className="text-sm text-foreground hover:text-primary transition-colors">
               Pricing
             </Link>
-            <Link href="#testimonials" className="text-sm text-foreground hover:text-primary transition-colors">
-              Testimonials
+            <Link href="#faq" className="text-sm text-foreground hover:text-primary transition-colors">
+              FAQ
             </Link>
           </nav>
 

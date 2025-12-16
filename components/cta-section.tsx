@@ -36,7 +36,7 @@ export function CTASection() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="font-serif text-4xl md:text-5xl font-bold mb-6"
             >
-              Ready to Scale Your Agency?
+              Ready to Transform Your Business?
             </motion.h2>
 
             <motion.p
@@ -46,8 +46,8 @@ export function CTASection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed"
             >
-              Partner with Spark and deliver conversion-focused websites that drive real results for your clients. Let's
-              grow together.
+              Partner with Enlighten Intelligence to bring your startup vision to life and scale your business with
+              cutting-edge technology and intelligent systems.
             </motion.p>
 
             <motion.div

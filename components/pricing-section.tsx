@@ -7,54 +7,56 @@ import { motion } from "framer-motion"
 export function PricingSection() {
   const plans = [
     {
-      name: "Starter",
-      price: "$2,500",
+      name: "Startup Launch",
+      price: "$15,000",
       period: "per project",
-      description: "Perfect for agencies testing the waters with conversion-focused design.",
+      description: "Perfect for validating your idea and launching your MVP quickly.",
       features: [
-        "Single landing page design",
-        "Mobile responsive",
-        "2 rounds of revisions",
-        "1 week delivery",
-        "Basic SEO optimization",
+        "MVP development",
+        "Core product features",
+        "Modern tech stack",
+        "6-8 week delivery",
+        "Basic analytics setup",
+        "30 days post-launch support",
       ],
     },
     {
-      name: "Professional",
-      price: "$7,500",
+      name: "Growth Accelerator",
+      price: "$45,000",
       period: "per project",
-      description: "Ideal for agencies ready to scale with comprehensive web solutions.",
+      description: "Ideal for startups ready to scale with advanced features and AI integration.",
       features: [
-        "Multi-page website (up to 10 pages)",
+        "Full product engineering",
+        "AI system integration",
         "Custom design system",
-        "Unlimited revisions",
-        "2 week delivery",
-        "Advanced SEO & analytics",
-        "CMS integration",
-        "30 days post-launch support",
+        "Advanced analytics & monitoring",
+        "Performance optimization",
+        "API & third-party integrations",
+        "90 days support & maintenance",
+        "Growth strategy consultation",
       ],
       featured: true,
     },
     {
-      name: "Enterprise",
+      name: "Enterprise Scale",
       price: "Custom",
       period: "contact us",
-      description: "For agencies needing white-label solutions and ongoing partnership.",
+      description: "For established businesses needing comprehensive solutions and ongoing partnership.",
       features: [
-        "Unlimited pages & features",
-        "White-label solutions",
-        "Dedicated account manager",
-        "Priority support",
-        "Custom integrations",
-        "Ongoing maintenance",
+        "Unlimited features & customization",
+        "Dedicated development team",
+        "Priority support 24/7",
+        "Advanced AI & automation",
+        "Cloud infrastructure setup",
+        "Ongoing development sprints",
         "Performance monitoring",
-        "Monthly strategy calls",
+        "Quarterly strategy sessions",
       ],
     },
   ]
 
   return (
-    <section className="py-24 px-6 bg-secondary">
+    <section id="pricing" className="py-24 px-6 bg-secondary">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.h2
@@ -73,7 +75,8 @@ export function PricingSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            Choose the plan that fits your agency's needs. All plans include our conversion-first approach.
+            Choose the plan that fits your business stage. All plans include our expertise in intelligent systems and
+            modern technology.
           </motion.p>
         </div>
 
