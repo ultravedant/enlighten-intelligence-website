@@ -1,6 +1,6 @@
 import Link from "next/link"
-import { IconBrandLinkedin, IconBrandTwitter, IconBrandInstagram, IconMail, IconPhone } from "@tabler/icons-react"
-import { Sparkles } from "lucide-react"
+import { IconBrandLinkedin, IconBrandTwitter, IconBrandInstagram, IconMail } from "@tabler/icons-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -9,9 +9,15 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-primary-foreground" />
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 relative">
+                <Image
+                  src="/ei-logo-circle.png"
+                  alt="Enlighten Intelligence Logo"
+                  width={40}
+                  height={40}
+                  className="object-contain"
+                />
               </div>
               <span className="font-serif text-xl font-bold">Enlighten Intelligence</span>
             </div>
@@ -58,16 +64,7 @@ export function Footer() {
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <IconMail className="w-4 h-4" />
-                  hello@enlightenintel.com
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tel:+1234567890"
-                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-                >
-                  <IconPhone className="w-4 h-4" />
-                  (123) 456-7890
+                  enlightenintelligence@gmail.com
                 </a>
               </li>
             </ul>

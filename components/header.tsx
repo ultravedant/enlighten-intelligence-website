@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/3d-button"
-import { Sparkles } from "lucide-react"
+import Image from "next/image"
 
 export function Header() {
   return (
@@ -8,9 +8,15 @@ export function Header() {
       <div className="container mx-auto px-6 py-4">
         <div className="relative flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 text-xl font-semibold">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <Sparkles className="w-5 h-5 text-primary-foreground" />
+          <Link href="/" className="flex items-center gap-3 text-xl font-semibold">
+            <div className="w-10 h-10 relative">
+              <Image
+                src="/ei-logo-circle.png"
+                alt="Enlighten Intelligence Logo"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
             </div>
             <span className="font-serif">Enlighten Intelligence</span>
           </Link>
@@ -31,7 +37,7 @@ export function Header() {
           </nav>
 
           {/* CTA Button */}
-          <Button className="rounded-full px-6">Book a 15-min Call 📞</Button>
+          <Button className="rounded-full px-6" onClick={() => window.open("https://calendly.com/vedantjha/30min", "_blank")} >Book a 15-min Call</Button>
         </div>
       </div>
     </header>

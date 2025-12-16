@@ -4,18 +4,15 @@ import { motion } from "framer-motion"
 
 export function ToolsSection() {
   const tools = [
-    { name: "ChatGPT", logo: "/chatgpt-logo-openai.jpg" },
-    { name: "Claude", logo: "/claude-ai-anthropic-logo.jpg" },
-    { name: "Midjourney", logo: "/midjourney-ai-art-logo.jpg" },
-    { name: "GitHub Copilot", logo: "/github-copilot-logo.png" },
-    { name: "Notion AI", logo: "/notion-ai-logo.png" },
-    { name: "Jasper AI", logo: "/jasper-ai-writing-logo.jpg" },
-    { name: "Perplexity", logo: "/perplexity-ai-search-logo.jpg" },
-    { name: "Runway", logo: "/runway-ml-video-ai-logo.jpg" },
-    { name: "Hugging Face", logo: "/hugging-face-ai-logo.jpg" },
-    { name: "Stable Diffusion", logo: "/stable-diffusion-ai-logo.jpg" },
-    { name: "LangChain", logo: "/langchain-framework-logo.jpg" },
-    { name: "TensorFlow", logo: "/placeholder.svg?height=80&width=80" },
+    { name: "Claude AI", logo: "/tools/claude-logo.png" },
+    { name: "ChatGPT", logo: "/tools/chatgpt-logo.png" },
+    { name: "Hugging Face", logo: "/tools/huggingface-logo.png" },
+    { name: "Anthropic", logo: "/tools/anthropic-logo.png" },
+    { name: "Dialogflow", logo: "/tools/dialogflow-logo.png" },
+    { name: "Replicate", logo: "/tools/replicate-logo.png" },
+    { name: "Weights & Biases", logo: "/tools/wandb-logo.png" },
+    { name: "Notion AI", logo: "/tools/notion-logo.png" },
+    { name: "AI Assistant", logo: "/tools/chatbot-logo.png" },
   ]
 
   return (

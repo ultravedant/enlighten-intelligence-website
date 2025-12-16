@@ -16,9 +16,51 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Enlighten Intelligence - Transform Your Business with AI & Technology",
+  title: "Enlighten Intelligence | AI-Powered Solutions for Startups & Growing Businesses",
   description:
-    "Your trusted partner to support startup ideas and scale running businesses to the next level through intelligent systems and innovative solutions.",
+    "Transform your startup idea into reality with Enlighten Intelligence. Expert product engineering, AI integration, UX design, and growth strategies. Launch MVPs in 6-8 weeks. Scale your business with intelligent systems and cutting-edge technology solutions.",
+  keywords: [
+    "AI solutions for startups",
+    "product engineering",
+    "intelligent systems",
+    "MVP development",
+    "startup technology partner",
+    "business scaling solutions",
+    "machine learning integration",
+    "UX design agency",
+    "growth strategy consulting",
+    "software development for startups",
+  ],
+  authors: [{ name: "Enlighten Intelligence" }],
+  creator: "Enlighten Intelligence",
+  publisher: "Enlighten Intelligence",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://enlightenintel.com",
+    title: "Enlighten Intelligence | AI-Powered Solutions for Startups",
+    description:
+      "Transform your startup with intelligent systems. Product engineering, AI integration, and growth strategies to scale your business.",
+    siteName: "Enlighten Intelligence",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Enlighten Intelligence | AI-Powered Solutions for Startups",
+    description:
+      "Transform your startup with intelligent systems. Product engineering, AI integration, and growth strategies.",
+    creator: "@enlightenintel",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   generator: "v0.app",
 }
 
@@ -29,6 +71,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/ei-logo.png" />
+      </head>
       <body className={`${inter.variable} ${instrumentSerif.variable} font-sans antialiased`}>
         {children}
         <Analytics />

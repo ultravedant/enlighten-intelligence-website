@@ -3,19 +3,28 @@
 export function PortfolioShowcase() {
   const portfolioItems = [
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-6laqPMa8FuLJLGY15UqGeDduXqPTnL.png",
+      image: "/projects/workspace-interior.png",
+      alt: "Interior Design Workspace Project - Creating inspiring workspaces",
     },
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-2SM27flFV2PAGevb0yGPlw5a1VO0Uc.png",
+      image: "/projects/langlore.png",
+      alt: "LANGLORE - Language preservation platform",
     },
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-auovg1HaxuQFknmxHcpbfOBXQPjAWw.png",
+      image: "/projects/satyam-classes.png",
+      alt: "Satyam Classes - Educational platform for students",
     },
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-1SjePGsMFItZp8FKWs7dh9emmNImMD.png",
+      image: "/projects/wabbie.png",
+      alt: "Wabbie - WhatsApp restaurant ordering system",
     },
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5-mlczSZMqTq3CmnCXAs0oV6ITGeKdDV.png",
+      image: "/projects/fast-lc.png",
+      alt: "FAST LC - Trade growth platform",
+    },
+    {
+      image: "/projects/healthchain.png",
+      alt: "HealthChain - Blockchain medical records system",
     },
   ]
 
@@ -27,7 +36,7 @@ export function PortfolioShowcase() {
           {portfolioItems.map((item, index) => (
             <div key={`set1-${index}`} className="flex-shrink-0 w-[600px]">
               <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-lg">
-                <img src={item.image || "/placeholder.svg"} alt="" className="w-full h-full object-cover" />
+                <img src={item.image || "/placeholder.svg"} alt={item.alt} className="w-full h-full object-cover" />
               </div>
             </div>
           ))}
@@ -37,7 +46,7 @@ export function PortfolioShowcase() {
           {portfolioItems.map((item, index) => (
             <div key={`set2-${index}`} className="flex-shrink-0 w-[600px]">
               <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-lg">
-                <img src={item.image || "/placeholder.svg"} alt="" className="w-full h-full object-cover" />
+                <img src={item.image || "/placeholder.svg"} alt={item.alt} className="w-full h-full object-cover" />
               </div>
             </div>
           ))}

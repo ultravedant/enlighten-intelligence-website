@@ -17,11 +17,11 @@ export function Hero() {
         >
           <span className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground" />
-            {"500+ Startups Launched"}
+            {"20+ Projects Launched"}
           </span>
           <span className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground" />
-            {"15+ Years in Tech"}
+            {"6+ Years in Tech"}
           </span>
         </motion.div>
 
@@ -61,8 +61,8 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="flex justify-center"
         >
-          <Button size="lg" className="rounded-full px-8 text-base">
-            Book a 15-min Call 📞
+          <Button size="lg" className="rounded-full px-8 text-base" onClick={() => window.open("https://calendly.com/vedantjha/30min", "_blank")} >
+            Book a 15-min Call
           </Button>
         </motion.div>
       </div>

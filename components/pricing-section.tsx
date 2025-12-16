@@ -8,8 +8,8 @@ export function PricingSection() {
   const plans = [
     {
       name: "Startup Launch",
-      price: "$15,000",
-      period: "per project",
+      tag: "MVP Ready",
+      timeline: "6-8 weeks",
       description: "Perfect for validating your idea and launching your MVP quickly.",
       features: [
         "MVP development",
@@ -22,8 +22,8 @@ export function PricingSection() {
     },
     {
       name: "Growth Accelerator",
-      price: "$45,000",
-      period: "per project",
+      tag: "Most Popular",
+      timeline: "12-16 weeks",
       description: "Ideal for startups ready to scale with advanced features and AI integration.",
       features: [
         "Full product engineering",
@@ -39,8 +39,8 @@ export function PricingSection() {
     },
     {
       name: "Enterprise Scale",
-      price: "Custom",
-      period: "contact us",
+      tag: "Full Partnership",
+      timeline: "Ongoing",
       description: "For established businesses needing comprehensive solutions and ongoing partnership.",
       features: [
         "Unlimited features & customization",
@@ -66,7 +66,7 @@ export function PricingSection() {
             transition={{ duration: 0.8 }}
             className="font-serif text-4xl md:text-5xl font-bold mb-4"
           >
-            Transparent Pricing
+            Investment Packages
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -75,8 +75,8 @@ export function PricingSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            Choose the plan that fits your business stage. All plans include our expertise in intelligent systems and
-            modern technology.
+            Choose the engagement model that fits your business stage. All packages include our expertise in intelligent
+            systems and modern technology.
           </motion.p>
         </div>
 
@@ -97,12 +97,17 @@ export function PricingSection() {
               )}
               <h3 className="font-serif text-2xl font-bold mb-2">{plan.name}</h3>
               <div className="mb-4">
-                <span className="text-4xl font-bold">{plan.price}</span>
-                <span className="text-muted-foreground ml-2">{plan.period}</span>
+                <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm">
+                  {plan.tag}
+                </span>
+                <div className="mt-3">
+                  <span className="text-2xl font-bold">{plan.timeline}</span>
+                  <span className="text-muted-foreground ml-2">delivery</span>
+                </div>
               </div>
               <p className="text-muted-foreground mb-6 leading-relaxed">{plan.description}</p>
               <Button stretch className="mb-6 rounded-full">
-                Get Started
+                Schedule Consultation
               </Button>
               <div className="space-y-3">
                 {plan.features.map((feature, featureIndex) => (

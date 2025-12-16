@@ -57,11 +57,8 @@ export function CTASection() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
-              <Button size="lg" className="rounded-full" leadingIcon={IconArrowRight}>
+              <Button size="lg" className="rounded-full" leadingIcon={IconArrowRight} onClick={() => window.open("https://calendly.com/vedantjha/30min", "_blank")}>
                 Book a 15-min Call
-              </Button>
-              <Button size="lg" variant="outline" className="rounded-full bg-transparent">
-                View Our Work
               </Button>
             </motion.div>
 

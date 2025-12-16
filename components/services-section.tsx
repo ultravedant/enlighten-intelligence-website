@@ -6,23 +6,23 @@ export function ServicesSection() {
   const services = [
     {
       title: "Product Engineering",
-      image: "/software-coding-screen.png",
-      overlayImage: "/modern-tech-product-interface-dashboard.jpg",
+      description: "Build robust, scalable products with modern technology stacks",
+      image: "/services/product-engineering.jpg",
     },
     {
       title: "Intelligent Systems",
-      image: "/artificial-intelligence-ai-neural-network.jpg",
-      overlayImage: "/machine-learning-data-analytics-visualization.jpg",
+      description: "Integrate AI and machine learning to automate and optimize",
+      image: "/services/intelligent-systems.jpg",
     },
     {
       title: "Experience Design",
-      image: "/ux-ui-design-wireframes-prototypes.jpg",
-      overlayImage: "/user-interface-mobile-app-design.jpg",
+      description: "Create intuitive, user-centered interfaces that delight",
+      image: "/services/experience-design.jpg",
     },
     {
       title: "Growth Strategy",
-      image: "/business-growth-chart-analytics.jpg",
-      overlayImage: "/startup-scaling-strategy-planning.jpg",
+      description: "Scale your business with data-driven strategies",
+      image: "/services/growth-strategy.jpg",
     },
   ]
 
@@ -51,7 +51,6 @@ export function ServicesSection() {
           </motion.p>
         </div>
 
-        {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
           {services.map((service, index) => (
             <motion.div
@@ -60,26 +59,25 @@ export function ServicesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group bg-secondary/30 rounded-3xl p-8 flex flex-col h-[320px] transition-all duration-300 hover:bg-secondary/50"
+              className="group relative overflow-hidden rounded-3xl h-[400px] cursor-pointer"
             >
-              {/* Image Container */}
-              <div className="relative flex-grow flex items-center justify-center mb-6">
-                {/* Back Image */}
+              {/* Full-width background image */}
+              <div className="absolute inset-0">
                 <img
                   src={service.image || "/placeholder.svg"}
-                  alt={`${service.title} showcase`}
-                  className="absolute w-44 h-auto rounded-lg shadow-md transform -rotate-6 transition-all duration-400 ease-in-out group-hover:rotate-[-10deg] group-hover:scale-105"
-                />
-                {/* Front Image */}
-                <img
-                  src={service.overlayImage || "/placeholder.svg"}
-                  alt={`${service.title} example`}
-                  className="absolute w-44 h-auto rounded-lg shadow-lg transform rotate-3 transition-all duration-400 ease-in-out group-hover:rotate-[5deg] group-hover:scale-105"
+                  alt={service.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
 
-              {/* Service Title */}
-              <h3 className="font-sans text-left text-lg font-medium text-foreground mt-auto">{service.title}</h3>
+              {/* Gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+
+              {/* Content at bottom with blur effect */}
+              <div className="absolute bottom-0 left-0 right-0 p-8 backdrop-blur-sm bg-black/20">
+                <h3 className="font-serif text-2xl font-semibold text-white mb-2">{service.title}</h3>
+                <p className="text-white/90 text-sm leading-relaxed">{service.description}</p>
+              </div>
             </motion.div>
           ))}
         </div>
