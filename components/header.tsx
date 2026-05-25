@@ -22,22 +22,33 @@ export function Header() {
           </Link>
 
           <nav className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
-            <Link href="#services" className="text-sm text-foreground hover:text-primary transition-colors">
+            <Link href="/" className="text-sm text-foreground hover:text-primary transition-colors">
+              Home
+            </Link>
+            <Link href="/our-work" className="text-sm text-foreground hover:text-primary transition-colors">
+              Our Work
+            </Link>
+            <Link href="/#services" className="text-sm text-foreground hover:text-primary transition-colors">
               Services
             </Link>
-            <Link href="#approach" className="text-sm text-foreground hover:text-primary transition-colors">
+            <Link href="/#approach" className="text-sm text-foreground hover:text-primary transition-colors">
               Process
             </Link>
-            <Link href="#pricing" className="text-sm text-foreground hover:text-primary transition-colors">
+            <Link href="/#pricing" className="text-sm text-foreground hover:text-primary transition-colors">
               Pricing
             </Link>
-            <Link href="#faq" className="text-sm text-foreground hover:text-primary transition-colors">
+            <Link href="/careers" className="text-sm text-foreground hover:text-primary transition-colors">
+              Careers
+            </Link>
+            <Link href="/#faq" className="text-sm text-foreground hover:text-primary transition-colors">
               FAQ
             </Link>
           </nav>
 
           {/* CTA Button */}
-          <Button className="rounded-full px-6" onClick={() => window.open("https://calendly.com/vedantjha/30min", target="_blank")} >Book a 15-min Call</Button>
+          <Button className="rounded-full px-6" href="https://calendly.com/vedantjha/30min" target="_blank">
+            Book a 15-min Call
+          </Button>
         </div>
       </div>
     </header>

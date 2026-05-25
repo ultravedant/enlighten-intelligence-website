@@ -42,7 +42,10 @@ const buttonVariants = cva(
   },
 )
 
-type MotionButtonPropsType = React.ButtonHTMLAttributes<HTMLButtonElement> &
+type MotionButtonPropsType = Omit<
+  React.ButtonHTMLAttributes<HTMLButtonElement>,
+  "onDrag" | "onDragStart" | "onDragEnd" | "onAnimationStart" | "style" | "transition"
+> &
   VariantProps<typeof buttonVariants> &
   MotionProps
 
@@ -93,12 +96,12 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           href={href}
           target={target}
           rel={finalRel}
-          {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
+          {...(props as any)}
         >
-          {isLoading ? <IconLoader2 {...TABLER_ICON_STYLE} className="animate-spin" /> : <></>}
-          {!isLoading && supportIcon && <SupportIconRender {...TABLER_ICON_STYLE} />}
+          {isLoading ? <IconLoader2 size={TABLER_ICON_STYLE} className="animate-spin" /> : <></>}
+          {!isLoading && supportIcon && <SupportIconRender size={TABLER_ICON_STYLE} />}
           {children}
-          {leadingIcon && <LeadingIconRender {...TABLER_ICON_STYLE} />}
+          {leadingIcon && <LeadingIconRender size={TABLER_ICON_STYLE} />}
         </motion.a>
       )
     }
@@ -107,12 +110,12 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       <motion.button
         className={cn(buttonVariants({ variant, size, className }), stretch && "w-full")}
         ref={ref}
-        {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}
+        {...(props as any)}
       >
-        {isLoading ? <IconLoader2 {...TABLER_ICON_STYLE} className="animate-spin" /> : <></>}
-        {!isLoading && supportIcon && <SupportIconRender {...TABLER_ICON_STYLE} />}
+        {isLoading ? <IconLoader2 size={TABLER_ICON_STYLE} className="animate-spin" /> : <></>}
+        {!isLoading && supportIcon && <SupportIconRender size={TABLER_ICON_STYLE} />}
         {children}
-        {leadingIcon && <LeadingIconRender {...TABLER_ICON_STYLE} />}
+        {leadingIcon && <LeadingIconRender size={TABLER_ICON_STYLE} />}
       </motion.button>
     )
   },
